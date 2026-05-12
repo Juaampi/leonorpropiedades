@@ -129,7 +129,7 @@ export default async function Home() {
         <section className="mx-auto max-w-7xl px-5 py-20 md:px-8" id="nosotros">
           <div className="grid gap-10 xl:grid-cols-[0.92fr_1.08fr] xl:items-center">
             <div className="rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(215,177,124,0.08),rgba(255,255,255,0.02))] p-5">
-              <div className="aspect-[4/5] rounded-[1.6rem] bg-[linear-gradient(180deg,rgba(215,177,124,0.14),rgba(199,139,153,0.08)),url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center" />
+              <div className="aspect-[4/5] rounded-[1.6rem] bg-[linear-gradient(180deg,rgba(203,164,106,0.08),rgba(141,101,70,0.04)),url('/brand/brancd.png')] bg-cover bg-center" />
             </div>
 
             <div className="space-y-8">

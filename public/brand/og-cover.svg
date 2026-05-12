@@ -17,7 +17,7 @@
   <text fill="#F5EDE3" fill-opacity="0.75" font-family="Arial, sans-serif" font-size="24" letter-spacing="0.16em">
     <tspan x="319" y="378">PLATAFORMA PREMIUM PARA VENTA, ALQUILER E INVERSIÓN</tspan>
   </text>
-  <text fill="#C78B99" font-family="Arial, sans-serif" font-size="22" letter-spacing="0.18em">
+  <text fill="#8D6546" font-family="Arial, sans-serif" font-size="22" letter-spacing="0.18em">
     <tspan x="319" y="432">TRISTÁN SUÁREZ · EZEIZA · BUENOS AIRES</tspan>
   </text>
   <defs>
@@ -36,17 +36,17 @@
       <stop offset="1" stop-color="#D7B17C" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1021 533) rotate(90) scale(299)">
-      <stop stop-color="#C78B99"/>
-      <stop offset="1" stop-color="#C78B99" stop-opacity="0"/>
+      <stop stop-color="#8D6546"/>
+      <stop offset="1" stop-color="#8D6546" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="paint2_linear" x1="135" y1="94" x2="1014.43" y2="592.548" gradientUnits="userSpaceOnUse">
       <stop stop-color="#D7B17C"/>
-      <stop offset="1" stop-color="#C78B99"/>
+      <stop offset="1" stop-color="#8D6546"/>
     </linearGradient>
     <linearGradient id="paint3_linear" x1="148" y1="170" x2="252.279" y2="287.296" gradientUnits="userSpaceOnUse">
       <stop stop-color="#F4E0CC"/>
       <stop offset="0.45" stop-color="#D7B17C"/>
-      <stop offset="1" stop-color="#C78B99"/>
+      <stop offset="1" stop-color="#8D6546"/>
     </linearGradient>
   </defs>
 </svg>
