@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LG Leonor Granados Negocios Inmobiliarios
 
-## Getting Started
+Plataforma inmobiliaria premium construida con `Next.js`, `TypeScript`, `TailwindCSS`, `Prisma`, `Neon PostgreSQL` y `Cloudinary`.
 
-First, run the development server:
+## Stack
+
+- Next.js App Router
+- React 19
+- TailwindCSS 4
+- Prisma ORM
+- Neon PostgreSQL
+- Cloudinary para imágenes
+- Autenticación con cookies seguras + `jose`
+- Panel admin integrado
+- Deploy listo para Netlify
+
+## Funcionalidades incluidas
+
+- Home premium con hero, buscador, destacados, nosotros, testimonios y contacto
+- Catálogo dinámico de propiedades
+- Página de detalle por propiedad con slider, video opcional, mapa y consulta
+- SEO dinámico con metadata, Open Graph, `sitemap.xml` y `robots.txt`
+- Panel admin con:
+  - login seguro
+  - dashboard
+  - listado de propiedades
+  - alta y edición de propiedades
+  - cambio de estado
+  - eliminación
+  - listado de consultas
+  - listado de usuarios admin
+- Prisma schema completo para:
+  - propiedades
+  - imágenes
+  - consultas
+  - usuarios administradores
+  - banners
+
+## Variables de entorno
+
+Copiá `.env.example` a `.env` y completá:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+DATABASE_URL=""
+DIRECT_URL=""
+AUTH_SECRET=""
+NEXT_PUBLIC_SITE_URL=""
+SEED_ADMIN_EMAIL=""
+SEED_ADMIN_PASSWORD=""
+CLOUDINARY_CLOUD_NAME=""
+CLOUDINARY_API_KEY=""
+CLOUDINARY_API_SECRET=""
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Desarrollo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Prisma
 
-## Learn More
+Generar cliente:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run prisma:generate
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Migrar:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run prisma:migrate
+```
 
-## Deploy on Vercel
+Seed inicial:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run seed
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Usuario inicial sugerido
+
+Se crea desde el seed:
+
+- Email: `admin@leonorgranados.com`
+- Password: `LGAdmin1234!`
+
+Podés cambiarlo desde variables de entorno.
+
+## Deploy en Netlify
+
+El proyecto incluye `netlify.toml` y usa `@netlify/plugin-nextjs`.
+
+Configurar en Netlify:
+
+- Build command: `npm run build`
+- Publish directory: `.next`
+- Variables de entorno: las mismas de `.env`
+
+## Notas
+
+- Si `DATABASE_URL` no está configurada, el frontend muestra propiedades demo para visualizar el diseño.
+- El guardado real en el panel admin requiere Neon PostgreSQL activo.
+- Las imágenes ya se pueden subir a Cloudinary desde el panel admin una vez completadas las variables de entorno.
